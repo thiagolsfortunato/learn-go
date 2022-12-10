@@ -23,6 +23,8 @@ func main() {
 	// also have uint8, uint15, uint32, uint64
 	// don't accept negative numbers -1
 	var varunit uint = 10000
+	// cannot use -1 (untyped int constant) as uint value in assignment (overflows)
+	// varunit = -1
 
 	// aliases
 	// alias for int32: rune
@@ -75,7 +77,6 @@ func main() {
 
 	// error
 	// deafult = <nil>
-	var error error = errors.New("Internal Error")
+	var error error = errors.New("Forced Internal Error")
 	fmt.Println("error:", error)
-
 }
