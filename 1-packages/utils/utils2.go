@@ -5,5 +5,5 @@ import (
 )
 
 func write2() {
-	fmt.Println("Writing from utils2")
+	fmt.Println("Writing from utils2 package")
 }

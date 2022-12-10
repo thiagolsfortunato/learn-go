@@ -14,5 +14,5 @@ func main() {
 	utils.Write()
 
 	err := checkmail.ValidateFormat("golearn@gmail.com")
-	fmt.Println(err)
+	if err != nil { fmt.Println(err) }
 }
