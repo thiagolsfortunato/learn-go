@@ -25,4 +25,5 @@ func main() {
 
 	// constant explicit: const <name> <type> = <value>
 	const const1 string = "const1"
+	// const1 := "cosnt2"
 }
