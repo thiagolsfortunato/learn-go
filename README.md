@@ -10,7 +10,3 @@ Best way of learning is doing.
 ## Golang Course
 
 [Aprenda Golang do Zero!](https://www.udemy.com/course/aprenda-golang-do-zero-desenvolva-uma-aplicacao-completa/) from [@OtavioGallego](https://github.com/OtavioGallego)
-
-Github Repos:
-- https://github.com/OtavioGallego/curso-golang
-- https://github.com/OtavioGallego/DevBook
