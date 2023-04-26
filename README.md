@@ -25,6 +25,9 @@ Best way of learning is doing.
   - [14.8 - pointers](./14-adv-functions/14.8-pointers/)
   - [14.9 - init](./14-adv-functions/14.9-init/)
 - [15 - methods](./15-methods/)
+- [16 - interfaces](./16-interfaces)
+  - [16.1 - forms](./16-interfaces/16.1-forms)
+  - [16.2 - generic-types](./16-interfaces/16.2-generic-types/)
 
 ## Golang Course
 
