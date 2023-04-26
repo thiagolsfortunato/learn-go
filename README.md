@@ -24,6 +24,7 @@ Best way of learning is doing.
   - [14.7 - closure](./14-adv-functions/14.7-closure/)
   - [14.8 - pointers](./14-adv-functions/14.8-pointers/)
   - [14.9 - init](./14-adv-functions/14.9-init/)
+- [15 - methods](./15-methods/)
 
 ## Golang Course
 
