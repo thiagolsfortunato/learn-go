@@ -28,6 +28,7 @@ Best way of learning is doing.
 - [16 - interfaces](./16-interfaces)
   - [16.1 - forms](./16-interfaces/16.1-forms)
   - [16.2 - generic-types](./16-interfaces/16.2-generic-types/)
+- [17 - cmd-line](./17-cmd-line/)
 
 ## Golang Course
 
