@@ -40,6 +40,8 @@ Best way of learning is doing.
     - [18.6.2 - generators](./18%20-%20concurrence/18.6%20-%20patterns/18.6.2%20-%20generators/)
     - [18.6.3 - multiplexing](./18%20-%20concurrence/18.6%20-%20patterns/18.6.3%20-%20multiplexing/)
 - [19 - testes](./19%20-%20tests/)
+  [19.1 - introdution](./19%20-%20tests/19.1%20-%20introduction/)
+  [19.2 - advanced](./19%20-%20tests/19.2%20-%20advanced/)
   
 ## Golang Course
 
