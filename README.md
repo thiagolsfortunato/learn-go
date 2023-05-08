@@ -29,7 +29,17 @@ Best way of learning is doing.
   - [16.1 - forms](./16-interfaces/16.1-forms)
   - [16.2 - generic-types](./16-interfaces/16.2-generic-types/)
 - [17 - cmd-line](./17-cmd-line/)
-
+- [18 - concurrence](./18-concurrence/)
+  - [18.1 - goroutines](./18-concurrence/18.1-goroutines/)
+  - [18.2 - wait-group](./18-concurrence/18.2-wait-group/)
+  - [18.3 - channels](./18-concurrence/18.3-channels/)
+  - [18.4 - buffered-channels](./18-concurrence/18.4-buffered-channels/)
+  - [18.5 - select](./18-concurrence/18.5-select/)
+  - [18.6 - patterns](./18-concurrence/18.6-patterns/)
+    - [18.6.1 - worker-pools](./18-concurrence/18.6-patterns/18.6.1-worker-pools/)
+    - [18.6.2 - generators](./18-concurrence/18.6-patterns/18.6.2-generators/)
+    - [18.6.3 - multiplexing](./18-concurrence/18.6-patterns/18.6.3-multiplexing/)
+  
 ## Golang Course
 
 [Aprenda Golang do Zero!](https://www.udemy.com/course/aprenda-golang-do-zero-desenvolva-uma-aplicacao-completa/) from [@OtavioGallego](https://github.com/OtavioGallego)
