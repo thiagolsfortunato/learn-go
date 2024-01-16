@@ -48,6 +48,7 @@ Best way of learning is doing.
 - [21 - http](./21%20-%20http/)
 - [22 - html](./22%20-%20html/)
 - [23 - database](./23%20-%20database/)
+- [24 - crud-database](./24%20-%20crud-database/)
   
 ## Golang Course
 
