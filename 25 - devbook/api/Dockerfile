@@ -1,5 +1,7 @@
 FROM golang:1.12-alpine
 
+ARG API_PORT=${API_PORT}
+
 # Add Maintainer Info
 LABEL maintainer="Thiago Fortunato <thiagolsfortunato@gmail.com>"
 
@@ -21,8 +23,8 @@ RUN apk update && apk upgrade && \
 # Build the Go app
 RUN go build -o main .
 
-# Expose port 8080 to the outside world
-EXPOSE 8080
+# Expose port 3000 to the outside world
+EXPOSE ${API_PORT}
 
 # Run the executable
 CMD ["./main"]

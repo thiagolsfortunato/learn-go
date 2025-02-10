@@ -15,12 +15,12 @@ type Route struct {
 }
 
 func Build(r *mux.Router) *mux.Router {
-	routes := userRoutes
-	routes = append(routes, LoginRoutes)
+	var routes []Route
+	routes = append(routes, userRoutes...)
+	routes = append(routes, loginRoutes...)
 	routes = append(routes, postRoutes...)
 
 	for _, route := range routes {
-
 		if route.AuthRequire {
 			r.HandleFunc(route.URI, middlewares.Logger(middlewares.Authenticate(route.Func))).Methods(route.Method)
 		} else {

@@ -8,12 +8,12 @@ import (
 	"api/src/response"
 	"api/src/security"
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"net/http"
 )
 
 func Login(w http.ResponseWriter, r *http.Request) {
-	body, err := ioutil.ReadAll(r.Body)
+	body, err := io.ReadAll(r.Body)
 	if err != nil {
 		response.Error(w, http.StatusUnprocessableEntity, err)
 		return

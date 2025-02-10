@@ -5,9 +5,11 @@ import (
 	"net/http"
 )
 
-var LoginRoutes = Route{
-	URI:         "/login",
-	Method:      http.MethodPost,
-	Func:        controllers.Login,
-	AuthRequire: false,
+var loginRoutes = []Route{
+	{
+		URI:         "/login",
+		Method:      http.MethodPost,
+		Func:        controllers.Login,
+		AuthRequire: false,
+	},
 }
