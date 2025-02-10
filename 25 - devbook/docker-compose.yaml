@@ -1,9 +1,25 @@
 services:
+  webapp:
+    image: golang:1.23
+    container_name: webapp
+    ports:
+      - "${WEBAPP_PORT}:${WEBAPP_PORT}"
+    restart: unless-stopped
+    command: bash -c "cd webapp && go run main.go"
+    environment:
+      WEBAPP_PORT: "${WEBAPP_PORT}"
+    volumes:
+      - ./:/go/
+    networks:
+      - api
+    depends_on:
+      - api
+
   api:
-    image: golang:1.21
+    image: golang:1.23
     container_name: api
     ports:
-      - "5000:5000"
+      - "${API_PORT}:${API_PORT}"
     restart: unless-stopped
     command: bash -c "cd api && go run main.go"
     environment:
@@ -17,6 +33,7 @@ services:
       - ./:/go/
     networks:
       - db
+      - api
     depends_on:
       - mysql
 
@@ -31,7 +48,7 @@ services:
       MYSQL_PASSWORD: "${DB_PASSWORD}"
       MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
     ports:
-      - "3306:3306"
+      - "${DB_PORT}:${DB_PORT}"
     volumes:
       - ./sql/:/docker-entrypoint-initdb.d/
       - my-db:/var/lib/mysql
@@ -43,3 +60,4 @@ volumes:
 
 networks:
   db:
+  api:  
