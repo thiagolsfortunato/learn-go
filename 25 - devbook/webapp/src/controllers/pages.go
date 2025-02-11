@@ -9,3 +9,8 @@ import (
 func LoadLoginPage(w http.ResponseWriter, r *http.Request) {
 	utils.ExecTemplates(w, "login.html", nil)
 }
+
+// LoadCreateUserPage loads the Create User page
+func LoadCreateUserPage(w http.ResponseWriter, r *http.Request) {
+	utils.ExecTemplates(w, "create-user.html", nil)
+}
