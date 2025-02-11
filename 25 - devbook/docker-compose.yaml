@@ -7,6 +7,7 @@ services:
     restart: unless-stopped
     command: bash -c "cd webapp && go run main.go"
     environment:
+      API_URL: "${API_URL}"
       WEBAPP_PORT: "${WEBAPP_PORT}"
     volumes:
       - ./:/go/
