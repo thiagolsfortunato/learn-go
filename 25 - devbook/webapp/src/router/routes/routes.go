@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"api/src/middlewares"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -21,7 +22,7 @@ func Build(router *mux.Router) *mux.Router {
 	routes = append(routes, userRoutes...)
 
 	for _, route := range routes {
-		router.HandleFunc(route.URI, route.Func).Methods(route.Method)
+		router.HandleFunc(route.URI, middlewares.Logger(route.Func)).Methods(route.Method)
 	}
 
 	fileServer := http.FileServer(http.Dir("./assets/"))

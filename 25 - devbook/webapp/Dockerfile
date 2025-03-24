@@ -1,4 +1,4 @@
-FROM golang:1.23
+FROM golang:1.23 as builder 
 
 ARG WEBAPP_PORT=${WEBAPP_PORT}
 
@@ -21,7 +21,13 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
 # Build the Go app
-RUN go build -o main .
+RUN go build -o webapp .
+
+FROM alpine:latest
+
+WORKDIR /webapp
+
+COPY --from=builder /webapp /webapp
 
 # Expose port 8080 to the outside world
 EXPOSE ${WEBAPP_PORT}

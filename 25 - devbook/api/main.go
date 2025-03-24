@@ -13,6 +13,6 @@ func main() {
 
 	r := router.Build()
 
-	log.Println("Api listening on", config.Port)
+	log.Println(": Api listening on", config.Port)
 	log.Println(http.ListenAndServe(fmt.Sprintf(":%d", config.Port), r))
 }

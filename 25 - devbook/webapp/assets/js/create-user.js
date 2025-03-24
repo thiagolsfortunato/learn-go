@@ -19,7 +19,8 @@ function createUser(event) {
     }
   }).done(function() {
     alert('User created successfully.');
-  }).fail(function() {
+  }).fail(function(erro) {
+    console.log(erro);
     alert('Error creating user.');
   });
 }

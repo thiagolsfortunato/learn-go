@@ -14,6 +14,6 @@ func main() {
 	utils.LoadTemplates()
 	r := router.Build()
 
-	log.Println("WebApp listening on", config.Port)
+	log.Println(": WebApp listening on", config.Port)
 	log.Println(http.ListenAndServe(fmt.Sprintf(":%d", config.Port), r))
 }
